@@ -1,0 +1,35 @@
+* { 
+    font-family:'Century Gothic', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background: rgb(30 30 30);
+}
+.body-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 10rem;
+    background: linear-gradient(90deg, rgba(81,4,139,1) 0%, rgba(248,0,255,1) 25%, rgba(255,0,74,1) 50%, rgba(248,0,255,1) 75%, rgba(81,4,139,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 5s infinite linear;
+    padding: 60px;
+}
+
+@keyframes shimmer {
+    0% {background-position: 0;}
+    25% {background-position: 150px;}
+    50% {background-position: 300px;}
+    75% {background-position: 450px;}
+    100% {background-position: 650px;}
+}
